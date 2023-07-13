@@ -1,0 +1,87 @@
+/* al pasar el cursor sobre el elemento con la clase "box", se animará el 
+cambio de color de fondo y el cambio de ancho (width) durante 1 segundo. */
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition-property: background-color, width;
+  transition-duration: 1s;
+}
+
+.box:hover {
+  background-color: red;
+  width: 300px;
+} */
+
+/* al pasar el cursor sobre el elemento con la clase "box", el cambio de color de fondo se animará durante 2 segundos. */
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition-property: background-color;
+  transition-duration: 2s;
+}
+
+.box:hover {
+  background-color: red;
+} */
+
+/* al pasar el cursor sobre el elemento con la clase "box", el cambio de color de fondo se animará durante 3 
+segundo con una función de temporización "ease-in-out", lo que resultará en una aceleración suave al principio y 
+al final de la animación. */
+
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition-property: background-color;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+
+.box:hover {
+  background-color: red;
+} */
+
+/* ejercicio ejemplo con steps  */
+
+/* .box {
+  background-color: #0077FF;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 4s steps(5);
+  }
+  .box:hover {
+  background-color: rgb(255, 140, 0);
+  } */
+
+/* establece una transición para el cambio de color de fondo durante 4 segundos divididos en 5 pasos discretos. 
+Cuando se pasa el cursor sobre el elemento, el color de fondo cambia a naranja. */
+
+/* cuando los colores intermedios en la transición no estan definidos explícitamente en el código
+ son elegidos por el navegador esto puede variar segun el navegador, para determinar los colores a usar hay que usar keyframes */
+
+/* transition delay */
+
+ /* .box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition-property: background-color;
+  transition-duration: 2s;
+  transition-delay: 2s;
+}
+
+.box:hover {
+  background-color: red;
+} */
+/* 
+utilizado la propiedad transition-delay para retrasar la transición en 1 segundo después de que se active 
+la pseudo-clase :hover. Esto significa que el cambio de color no ocurrirá de inmediato cuando se pase el cursor 
+sobre el cuadro, sino que habrá un retraso de 1 segundo antes de que comience la transición. */

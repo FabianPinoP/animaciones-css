@@ -1,0 +1,41 @@
+@import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+
+body{ 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+.loading-bar {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #000;
+  margin: 20px auto; /* Centra horizontalmente */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex; /* Utiliza flexbox para centrar verticalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #2196F3;
+  animation: progressAnimation 2s linear infinite;
+  border-radius: 10px;
+}
+
+.text{
+  color: #000;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 10px;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

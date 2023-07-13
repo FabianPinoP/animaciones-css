@@ -1,0 +1,92 @@
+/* @keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  50%{
+    background-color: seagreen;
+  }
+  75%{
+    transform: translate(300px, 300px) rotate(90deg) scale(2.2) skew( 20deg, 20deg)
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  animation-name: slide-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+} */
+
+/* aqui hemos definido una animación llamada slide-in utilizando @keyframes. La animación mueve un elemento
+estableciendo los siguientes atributos para la animación:
+
+animation-name: Se establece como slide-in, que es el nombre que hemos dado a la animación en @keyframes.
+animation-duration: Se establece en 2 segundos, lo que indica que la animación tomará 2 segundos para completar una iteración.
+animation-timing-function: Se establece en ease-in-out, que aplica una aceleración y desaceleración suave a la animación.
+animation-delay: Se establece en 1 segundo, lo que significa que habrá un retraso de 1 segundo antes de que la animación 
+                  comience a ejecutarse.
+animation-iteration-count: Se establece en infinite, lo que indica que la animación se repetirá infinitamente.
+animation-direction: Se establece en alternate, lo que hace que la animación se reproduzca en sentido inverso después de 
+                      cada iteración. */
+
+/* ejemplo que incluye animation-fill-mode y animation-play-state */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes pulse {
+  0% {
+    border-radius: 50%;
+    transform: scale(1);
+    background-color: blue;
+  }
+  50% {
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: red;
+  }
+  100% {
+  
+    transform: scale(1);
+    background-color: blue;
+  }
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.box:hover {
+  animation-play-state: paused;
+}
+
+/* animation-fill-mode: Se establece en forwards, lo que indica que el elemento retendrá el estado final 
+                      de la animación después de que esta termine
+
+animation-play-state: Se establece en running de forma predeterminada, lo que indica que la animación 
+                      se reproduce. Sin embargo, al pasar el cursor sobre el elemento, se aplica la pseudo-clase :hover y 
+                      establecemos animation-play-state: paused, lo que pausa la animación. */
