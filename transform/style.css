@@ -15,7 +15,7 @@ aplicando sólo el de la segunda ejemplo: */
   height: 200px;
   transition-property: transform;
   transition-duration: 2s;
-} */
+}  */
 /* ejemplo para no sobreescribir la propiedad transform: */
 /* .box:hover {
   border-radius: 50%;

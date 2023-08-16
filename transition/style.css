@@ -69,18 +69,18 @@ Cuando se pasa el cursor sobre el elemento, el color de fondo cambia a naranja. 
 
 /* transition delay */
 
- /* .box {
+ .box {
   width: 200px;
   height: 200px;
   background-color: blue;
   transition-property: background-color;
   transition-duration: 2s;
-  transition-delay: 2s;
+  transition-delay: 4s;
 }
 
 .box:hover {
   background-color: red;
-} */
+}
 /* 
 utilizado la propiedad transition-delay para retrasar la transición en 1 segundo después de que se active 
 la pseudo-clase :hover. Esto significa que el cambio de color no ocurrirá de inmediato cuando se pase el cursor 

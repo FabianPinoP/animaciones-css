@@ -1,0 +1,16 @@
+Qué son las media queries y cuál es su función
+principal en el diseño web?
+
+Las media queries son una característica fundamental de CSS que permiten adaptar el 
+diseño y estilo de una página web en función de las características del dispositivo o del 
+entorno de visualización. Su función principal es proporcionar un diseño web sensible o "responsive", 
+lo que significa que el diseño y la presentación de la página se ajustan automáticamente para ofrecer 
+una experiencia óptima en una amplia variedad de dispositivos y tamaños de pantalla, desde ordenadores 
+de escritorio hasta dispositivos móviles.
+
+¿Cuál es la sintaxis básica de una media
+query?
+
+@media media-type and (condición) {
+  /* Estilos que se aplicarán cuando la condición sea verdadera para el media type especificado */
+}

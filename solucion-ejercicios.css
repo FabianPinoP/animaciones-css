@@ -1,0 +1,66 @@
+/* ejercicio 1 */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: red;
+}
+
+/* ejercicio 2 */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  animation: slideRight 2s ease infinite alternate;
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+/* ejercicio 3 */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transform-origin: center center;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ejercicio-4 */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease, left 0.5s ease, top 0.5s ease;
+}
+
+.box:hover {
+  transform: rotate(360deg) translate(40px, 40px) scale(1.2);
+  opacity: 0.8;
+  left: 40px;
+  top: 40px;
+}
